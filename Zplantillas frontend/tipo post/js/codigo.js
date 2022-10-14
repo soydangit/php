@@ -9,8 +9,8 @@ $('#Enviar').click(function(){
 	function(info,estado)
 	{
 
-		 div = document.getElementById('resultado');
-         div.style.display = '';
+		div = document.getElementById('resultado');
+        div.style.display = '';
 		$('#resultado').html(info);
 
 	});

@@ -14,21 +14,58 @@ primera hora ese día-->
     <?php
     $dia = $_POST['dia'];
 
-
-    $posicion = "abajo";
+    $posicion = $dia;
+    if(($posicion=="Lunes")||($posicion=="lunes")||($posicion=="LUNES")){
+        echo "Los lunes a primera hora tienes: Informatica I";
+    }
+        elseif(($posicion=="Martes")||($posicion=="martes")||($posicion=="MARTES")){
+echo "Los martes a primera hora tienes: Algebra lineal ";
+}
+        elseif(($posicion=="Miercoles")||($posicion=="miercoles")||($posicion=="MIERCOLES")){
+echo "Los miercoles a primera hora tienes: Contabilidad Basica ";
+}
+        elseif(($posicion=="Jueves")||($posicion=="jueves")||($posicion=="JUEVES")){
+echo "Los jueves a primera hora tienes:Lenguajes de programación";
+}
+        elseif(($posicion=="Viernes")||($posicion=="viernes")||($posicion=="VIERNES")){
+echo "Los viernes a primera hora tienes: Optativa I ";
+}
+        elseif(($posicion=="Sabado")||($posicion=="sabado")||($posicion=="SABADO")){
+echo "Los sabados a primera hora tienes: Investigación operativa II";
+}
+        elseif(($posicion=="Domingo")||($posicion=="domingo")||($posicion=="DOMINGO")){
+echo "Los domingos son tus dias de descanso ¡Disfrutalo!!!";
+}
+else {
+        echo "Vuelve a intentarlo";
+}
+    /*
     switch ("$posicion") {
-        case "arriba":  //bloque 1
-            echo "La variable contiene";
-            echo " el valor arriba";
+        //case "lunes":  //bloque 1
+           // echo " Lunes a primera hora tienes informatica I";
+           // break;
+        //case "martes": // Bloque 2
+           // echo "Martes a primera hora tienes Algebra lineal ";
+           // break;
+        case "miercoles": // Bloque 2
+            echo "Miercoles a primera hora tienes Contabilidad basica ";
             break;
-        case "abajo": // Bloque 2
-            echo "La variable contiene ";
-            echo " el valor de abajo";
+        case "jueves": // Bloque 2
+            echo "Jueves a primera hora tienes Lenguajes de programación ";
+            break;
+        case "viernes": // Bloque 2
+            echo "viernes a primera hora tienes Optativa I ";
+            break;
+        case "sabado": // Bloque 2
+            echo "Sabadi a primera hora tienes investigación operativa II ";
+            break;
+        case "Domingo": // Bloque 2
+            echo "Los domingos es tu dia libre !Disfrutalo!!";
             break;
         default: //Bloque 3
-            echo "la variable contiene otro valor";
-            echo " distintio de arriba y abajo";
+            echo "introduzca un dia de la semana";
     }
+*/
     ?>
 </body>
 
