@@ -46,7 +46,8 @@ elseif (($nu3<$nu1)&&($nu3<$nu2)){
 
 
 echo "el order es: ".$me.",".$med.",".$may;
-echo "<center>El orden correcto es:  $me , $med ,  $may</center>";
+echo "<center>El orden ascendente es:  $me , $med ,  $may</center>";
+echo "<center><br>El orden descendente es:  $may , $med ,  $me</center>";
 ?>
 
 
