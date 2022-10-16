@@ -1,6 +1,5 @@
+<!--Realizar un programa que calcule la media de tres notas.-->
 <?php
-
-
 $calificacion1=$_POST["nota1"];
 $calificacion2=$_POST["nota2"];
 $calificacion3=$_POST["nota3"];
