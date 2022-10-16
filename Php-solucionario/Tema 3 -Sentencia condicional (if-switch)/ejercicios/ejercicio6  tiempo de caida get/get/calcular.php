@@ -1,0 +1,11 @@
+
+<?php
+
+$diametro = $_GET['dia'];
+$t=sqrt($diametro*2/9.81);
+echo str_repeat("&nbsp;",21)."DATOS RECIBIDOS";
+echo "El tiempo de caida es =".round($t,4)."seg";
+
+//echo "<br/> &nbsp; El volumen del cilindro es de:". $volumen. "&nbsp m<sup>3</sup>";
+
+?>
