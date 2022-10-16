@@ -1,4 +1,5 @@
-
+<!--Realizar un programa que calcule el tiempo que tardará em caer un objeto desde una alturah.
+Aplica la fórmula t = raiz(2h/g) siendo  g= 9.81 m/s²-->
 <?php
 
 $diametro = $_GET['dia'];

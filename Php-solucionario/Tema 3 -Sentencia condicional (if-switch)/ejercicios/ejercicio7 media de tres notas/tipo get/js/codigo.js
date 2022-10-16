@@ -1,8 +1,9 @@
 $('#Enviar').click(function(){
-	var diametro=$("#h").val();
-    var altura=$("#al").val();
+	var nota1=$("#a").val();
+    var nota2=$("#b").val();
+    var nota3=$("#c").val();
 
-	$.get('calcular.php',{dia:diametro,alt:altura},
+	$.get('calcular.php',{n1:nota1,n2:nota2,n3:nota3},
 	function(info,estado)
 	{
 
