@@ -42,7 +42,7 @@ elseif (($nu3<$nu1)&&($nu3<$nu2)){
 }
 
 
-echo "el order es: ".$me.", ".$med.", ".$may;
+echo "<center>DATOS RECIBIDOS</center>";
 echo "<center>El orden correcto es:  $me , $med , $may</center>";
 
 ?>

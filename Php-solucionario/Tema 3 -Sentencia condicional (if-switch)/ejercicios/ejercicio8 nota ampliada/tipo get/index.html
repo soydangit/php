@@ -1,0 +1,70 @@
+<!--Ampliar el programa anterior para que diga la nota del boletin (insufinciente, suficiente, bien, notable
+o sobresaliente
+insuficiente->  nota<51
+suficiente->  nota=51
+bien->      nota>51 && nota<70
+notable->   nota>70 && nota<90
+sobresaliente-> nota>90 && nota<=100
+)-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>GET-Promedio de tres notas</title>
+  </head>
+
+  <body>
+    <div class="page-header bg-danger text-white text-center">
+      <a class="navbar-brand" href="#">
+        <img src="logos.png" alt="" class="log-empresa" />
+      </a>
+
+      <span class="h4">PROMEDIO DE 3 NOTAS</span>
+    </div>
+
+    <form action="#" method="GET" style="width: 25%; margin: 0 auto">
+      <fieldset>
+        <legend class="text-center header text-danger">
+          CALCULO DEL PROMEDIO DE 3 NOTAS
+        </legend>
+        <div class="form-group">
+          <label for="pro1">Introduzca la primera nota:</label>
+          <input type="text" class="form-control" id="n1" />
+        </div>
+        <div class="form-group">
+          <label for="pro2">Introduzca la segunda nota:</label>
+          <input type="text" class="form-control" id="n2" />
+        </div>
+        <div class="form-group">
+          <label for="pro2">Introduzca la tercera nota:</label>
+          <input type="text" class="form-control" id="n3" />
+        </div>
+        <div class="form-group">
+          <input
+            type="button"
+            id="Enviar"
+            class="btn btn-danger text-white form-control"
+            value="Calcular"
+          />
+        </div>
+        <div class="form-group">
+          <div
+            id="resultado"
+            style="
+              background-color: #07ff3ddb;
+              width: 100%;
+              display: none;
+              font-weight: bold;
+            "
+          ></div>
+        </div>
+      </fieldset>
+    </form>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
+  </body>
+</html>
