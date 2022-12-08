@@ -1,0 +1,21 @@
+Dada una ecuación de segundo grado en su forma general,
+ax²+bx+c=0, a≠0
+Se define su discriminante como
+Δ=b²−4⋅a⋅c
+
+El discriminante informa sobre el número y tipo de soluciones:
+
+    Si Δ>0, existen dos soluciones reales y distintas.
+
+    Si Δ=0, existe una única solución y es real.
+
+    Si Δ<0 o (b²−4⋅a⋅c)<0, existen dos soluciones complejas distintas 
+    (las soluciones son números complejos conjugados).
+
+No obstante, si el coeficiente b o el coeficiente c es 0, la ecuación es incompleta y podemos calcular sus soluciones sin aplicar la fórmula anterior:
+
+    Si b=0 y c≠0 (ecuación ax²+c=0), las soluciones son: x=±√−c/a.
+
+    Si b≠0 y c=0 (ecuación ax²+bx=0), una solución es: x1=0 y la otra es x2=−b/a.
+
+    Si b=c=0 (ecuación ax²=0), la única solución es x=0.

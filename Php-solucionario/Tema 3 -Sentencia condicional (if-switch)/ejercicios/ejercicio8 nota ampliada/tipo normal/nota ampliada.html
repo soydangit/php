@@ -1,0 +1,26 @@
+<!--Ampliar el programa anterior para que diga la nota del boletin (insufinciente, suficiente, bien, notable
+o sobresaliente
+insuficiente->  nota<51
+suficiente->  nota=51
+bien->      nota>51 && nota<70
+notable->   nota>70 && nota<90
+sobresaliente-> nota>90 && nota<=100
+)-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nota final</title>
+  </head>
+  <body>
+    <h3>Nota final</h3>
+    <form action="calcular.php" method="get">
+      introduce el primer numero=<input type="number" name="a" /><br /><br />
+      introduce el segundo numero=<input type="number" name="b" /><br /><br />
+      introduce el tercer numero=<input type="number" name="c" /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
