@@ -1,201 +1,153 @@
 <!--Escribe un programa que nos diga el horóscopo a partir del dia y el mes de nacimiento-->
 <?php
-$dia=$_GET['a'];
-$mes=$_GET['b'];
-switch($mes){
-    //enero
-    case "1";
-    if(($dia<1)||($dia>31)){ //Enero tiene maximo 31 dias
-        echo "No es un día valido";
+$dia=$_POST['a'];
+$mes=$_POST['b'];
+if(($mes<1)||($mes>12)){
+    echo $mes." No es un mes valido";
+}
+else{
+//enero
+if($mes==1){
+    $mes="Enero";
+    if(($dia<1)||($dia>31)){
+        echo $mes." solo tiene 31 días<br>";
     }
+    elseif($dia>=20){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Acuario";
+    }
+
     else{
-    if($dia<=19){
-        echo "Su fecha de nacimiento es el: ".$dia." de Enero<br>";
-        echo "Su signo es Capricornio";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Capricornio";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Enero<br>";
-        echo "Su signo es Acuario";
-    }
-    }
-    break;
-    //febrero
-    case "2";
+}
+//febrero
+if($mes==2){
+        $mes="Febrero";
     if(($dia<1)||($dia>29)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 28 días y 29 en año bisiesto<br>";
+    }
+    elseif($dia>=19){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Piscis";
     }
     else{
-    if($dia<=18){
-        echo "Su fecha de nacimiento es el: ".$dia." de Febrero<br>";
-        echo "Su signo es Acuario";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Acuario";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Febrero<br>";
-        echo "Su signo es Piscis";
-    }
-    }
-    break;
-    //marzo
-    case "3";
+}
+//marzo
+if($mes==3){
+    $mes="Marzo";
     if(($dia<1)||($dia>31)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 31 días<br>";
     }
+    elseif($dia>=21){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Aries";
+    }
+
     else{
-    if($dia<=20){
-        echo "Su fecha de nacimiento es el: ".$dia." de Marzo<br>";
-        echo "Su signo es Piscis";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Piscis";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Marzo<br>";
-        echo "Su signo es Aries";
-    }
-    }
-    break;
-    //abril
-    case "4";
+}
+//Abril
+if($mes==4){
+        $mes="Abril";
     if(($dia<1)||($dia>30)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 30 días<br>";
+    }
+    elseif($dia>=20){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Tauro";
     }
     else{
-    if($dia<=19){
-        echo "Su fecha de nacimiento es el: ".$dia." de Abril<br>";
-        echo "Su signo es Aries";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Aries";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Abril<br>";
-        echo "Su signo es Tauro";
-    }
-    }
-    break;
-    //Mayo
-    case "5";
+}
+//Mayo
+if($mes==5){
+    $mes="Mayo";
     if(($dia<1)||($dia>31)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 31 días<br>";
     }
+    elseif($dia>=21){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Geminis";
+    }
+
     else{
-    if($dia<=20){
-        echo "Su fecha de nacimiento es el: ".$dia." de Mayo<br>";
-        echo "Su signo es Tauro";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Tauro";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Mayo<br>";
-        echo "Su signo es Geminis";
-    }
-    }
-    break;
-    //junio
-    case "6";
+}
+//Junio
+if($mes==6){
+    $mes="Junio";
     if(($dia<1)||($dia>30)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 30 días<br>";
     }
+    elseif($dia>=21){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Cancer";
+    }
+
     else{
-    if($dia<=20){
-        echo "Su fecha de nacimiento es el: ".$dia." de junio<br>";
-        echo "Su signo es Geminis";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Geminis";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de junio<br>";
-        echo "Su signo es Cancer";
-    }
-    }
-    break;
-    //Julio 
-    case "7";
+}
+//Julio
+if($mes==7){
+    $mes="Julio";
     if(($dia<1)||($dia>31)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 31 días<br>";
     }
+    elseif($dia>=23){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Leo";
+    }
+
     else{
-    if($dia<=22){
-        echo "Su fecha de nacimiento es el: ".$dia." de Julio<br>";
-        echo "Su signo es Cancer";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Cancer";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Julio<br>";
-        echo "Su signo es Leo";
-    }
-    }
-    break;
-    //Agosto
-    case "8";
+}
+//Agosto
+if($mes==8){
+    $mes="Agosto";
     if(($dia<1)||($dia>31)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 31 días<br>";
     }
+    elseif($dia>=23){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Virgo";
+    }
+
     else{
-    if($dia<=22){
-        echo "Su fecha de nacimiento es el: ".$dia." de Agosto<br>";
-        echo "Su signo es Leo";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Leo";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Agosto<br>";
-        echo "Su signo es Virgo";
-    }
-    }
-    break;
-    //Septiembre
-    case "9";
-    if(($dia<1)||($dia>30)){
-        echo "No es un día valido";
-    }
-    else{
-    if($dia<=22){
-        echo "Su fecha de nacimiento es el: ".$dia." de Septiembre<br>";
-        echo "Su signo es Virgo";
-    }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Septiembre<br>";
-        echo "Su signo es Libra";
-    }
-    }
-    break;
-    //Octubre
-    case "10";
+}
+/*
+if($mes==){
+    $mes="";
     if(($dia<1)||($dia>31)){
-        echo "No es un día valido";
+        echo $mes." solo tiene 31 días<br>";
     }
+    elseif($dia>=23){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: ";
+    }
+
     else{
-    if($dia<=22){
-        echo "Su fecha de nacimiento es el: ".$dia." de Octubre<br>";
-        echo "Su signo es Libra";
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: ";
     }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Octubre<br>";
-        echo "Su signo es Escorpio";
-    }
-    }
-    break;
-    //noviembre
-    case "11";
-    if(($dia<1)||($dia>30)){
-        echo "No es un día valido";
-    }
-    else{
-    if($dia<=21){
-        echo "Su fecha de nacimiento es el: ".$dia." de noviembre<br>";
-        echo "Su signo es Escorpio";
-    }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de noviembre<br>";
-        echo "Su signo es Sagitario";
-    }
-    }
-    break;
-    //Diciembre
-    case "12";
-    if(($dia<1)||($dia>31)){
-        echo "No es un día valido";
-    }
-    else{
-    if($dia<=21){
-        echo "Su fecha de nacimiento es el: ".$dia." de Diciembre<br>";
-        echo "Su signo es Sagitario";
-    }
-    else{
-        echo "Su fecha de nacimiento es el: ".$dia." de Diciembre<br>";
-        echo "Su signo es Capricornio";
-    }
-    }
-    break;
-    default:
-    echo $mes." No es un Mes Correcto";
+}
+*/
 }
 ?>
