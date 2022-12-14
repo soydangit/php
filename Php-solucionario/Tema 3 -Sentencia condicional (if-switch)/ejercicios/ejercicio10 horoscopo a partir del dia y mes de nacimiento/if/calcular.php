@@ -132,22 +132,69 @@ if($mes==8){
     echo "Su signo es: Leo";
     }
 }
-/*
-if($mes==){
-    $mes="";
+//Septiembre
+if($mes==9){
+    $mes="Septiembre";
+    if(($dia<1)||($dia>30)){
+        echo $mes." solo tiene 30 días<br>";
+    }
+    elseif($dia>=23){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Libra ";
+    }
+
+    else{
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Virgo";
+    }
+}
+//octubre
+if($mes==10){
+    $mes="Octubre";
     if(($dia<1)||($dia>31)){
         echo $mes." solo tiene 31 días<br>";
     }
     elseif($dia>=23){
     echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
-    echo "Su signo es: ";
+    echo "Su signo es: Escorpio";
     }
 
     else{
     echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
-    echo "Su signo es: ";
+    echo "Su signo es: Virgo";
     }
 }
-*/
+//Noviembre
+if($mes==11){
+    $mes="Noviembre";
+    if(($dia<1)||($dia>30)){
+        echo $mes." solo tiene 30 días<br>";
+    }
+    elseif($dia>=22){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Sagitario";
+    }
+
+    else{
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Escorpio";
+    }
+}
+// Diciembre
+if($mes==12){
+    $mes="Diciembre";
+    if(($dia<1)||($dia>31)){
+        echo $mes." solo tiene 31 días<br>";
+    }
+    elseif($dia>=23){
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Capricornio";
+    }
+
+    else{
+    echo "Su fecha de nacimiento es ".$dia." de ".$mes."<br>";
+    echo "Su signo es: Sagitario";
+    }
+}
 }
 ?>
